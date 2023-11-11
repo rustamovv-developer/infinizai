@@ -1,0 +1,98 @@
+#loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background-color: black;
+}
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
+.ball {
+  text-align: center;
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  vertical-align: middle;
+  border-radius: 10px;
+  background-color: rgb(0, 218, 116);
+  margin-left: 15px;
+  animation-name: load;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+.animation-ball {
+  margin: 200px auto;
+  text-align: center;
+  height: 100px;
+}
+.ball1 {
+  animation-delay: 0s;
+  margin-left: 0;
+}
+.ball2 {
+  animation-delay: 0.05s;
+}
+.ball3 {
+  animation-delay: 0.1s;
+}
+.ball4 {
+  animation-delay: 0.15s;
+}
+.ball5 {
+  animation-delay: 0.2s;
+}
+.ball6 {
+  animation-delay: 0.25s;
+}
+.ball7 {
+  animation-delay: 0.3s;
+}
+.ball8 {
+  animation-delay: 0.35s;
+}
+.ball9 {
+  animation-delay: 0.4s;
+}
+.ball10 {
+  animation-delay: 0.45s;
+}
+.ball11 {
+  animation-delay: 0.5s;
+}
+.ball12 {
+  animation-delay: 0.55s;
+}
+
+@keyframes load {
+  0% {
+    height: 50px;
+    width: 5px;
+    background-color: rgb(0, 218, 116);
+  }
+  50% {
+    height: 100px;
+    background-color: rgb(251, 255, 0);
+  }
+  100% {
+    height: 50px;
+    width: 5px;
+    background-color: rgb(0, 218, 116);
+  }
+}
+
+@media(max-width: 500px){
+    .ball11,
+    .ball12,
+    .ball13{
+        display: none;
+    }
+}
